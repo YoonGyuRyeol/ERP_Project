@@ -1,0 +1,138 @@
+*{margin :0;
+		padding : 0;
+		box-sizing : content-box;
+		color : rgb(0, 0, 0);
+		font-family: 'Oswald', sans-serif;
+		text-decoration : none;
+		}
+#login{
+	width:40px;
+	height:40px;
+	margin-left:130px;
+	background:url('images/user2.png');
+	background-size:100%;
+	background-repeat:no-repeat;
+	border-radius: 30px;
+}	
+#guidline{
+top : 100px;
+height:20px;
+width:100%;
+background:#6182D6;
+position:absolute;
+}	
+.inline1{display: inline-block;
+		margin-right: 30px;
+		margin-left:30px;
+		margin-top:15px;}
+.inline2{display: inline-block;
+		float:right;
+		margin-right: 30px;
+		margin-left:30px;
+		margin-top:35px;}	
+.inline3{display: inline-block;
+	margin-left:60px;
+	margin-right:120px;
+	margin-top:30px;
+		}	
+.inline4{display: inline-block;
+	margin-left:20px;
+	
+		}
+.inline5{
+	margin-top:-50px;
+	position:relative;
+	top:-50px;
+	margin-right: 50px;
+}	
+.inline6{
+	margin-top:50px;
+}
+
+.image2{
+	width:100%;
+	display:inline-block;
+}
+#header{
+	width:100%;
+	background:#FFFFFF;
+	font-size:10pt;
+	position:absolute;
+	top : 0px;
+	float :left;
+	z-index : 22222;
+	height :100px;
+}
+#footer{
+	width:100%;
+	height:161px;
+	background:#6182D6;
+	font-size:8pt;
+	position:absolute;
+	top : 1000px; 
+}
+#capteam{
+	display: inline-block;
+	margin-right: 20px;
+	margin-top:100px;
+	
+	float:right;
+	
+}
+
+
+
+	
+#title{
+	width:140px;
+	height:80px;
+	font-size:15pt;
+	position: relative;
+    top: -10px;
+}
+
+
+#header>*{
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    font-weight : 400;
+    text-decoration: none;}
+p{
+font-size:26px;
+font-weight : 400;
+color:black;
+ font-family: 'Oswald', sans-serif;
+}
+#secondp{
+color:white;
+}
+#maincontent{
+	width:100%;
+	height:441px;
+	 color: black;
+	font-size:16pt;
+	position:absolute;
+	top : 400px; 
+}
+
+li{list-style:none}
+.menu {width: 800px; overflow: hidden; border-radius: 10px;}
+.menu > li{ width: 33.3%; float: left; text-align: center; line-height: 40px; background-color: #5778ff;}
+.menu a {color: #fff;}
+.submenu > li {line-height: 50px; background-color: #94a9ff;}
+.submenu {height:0; overflow: hidden; }
+.menu > li:hover {background-color: #94a9ff; transition-duration: 0.5s;}
+.menu > li:hover .sub4 {height: 200px; transition-duration: 1s;}
+.menu > li:hover .sub3 {height: 150px; transition-duration: 1s;}
+.headmenu {float: left; margin-top: 30px; margin-left: 100px;}
+#title {float: left;}
+		
+#mainpage {top : 120px; width:100%; position:absolute;}
+#sidemenu {float: left; width: 15%;}
+#sidemenu a {color: #fff;}
+#contentpage {float: left; width: 85%;}
+.side {width:100%; height: 100px; text-align: center; line-height: 100px; background:#94a9ff; border-bottom:3px solid; border-color: #5778ff;}
+.side:hover {background-color: #5778ff;}
+#sidehead {width:100%; height: 100px; text-align: center; line-height: 100px; background:#94a9ff; border-bottom: 10px solid; border-color: #5778ff;
+font-weight: bold; color: #fff; font-size: 20px; color:#fff;}
+.cp {padding: 10px; }
