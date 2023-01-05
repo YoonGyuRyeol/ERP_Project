@@ -51,7 +51,7 @@ public class CerpPOTaxbillAction implements Action {
 				ActionForward forward = new ActionForward("place_an_order_taxbill_popup.jsp", false); //  
 				return forward;
 				}else {
-					System.out.println("오류 1234");
+					System.out.println("오류 potaxbillaction");
 					response.setContentType("text/html; charset=UTF-8");
 					PrintWriter w = response.getWriter();
 			        w.write("<script>alert('오류.');history.go(-1);</script>");
@@ -67,7 +67,7 @@ public class CerpPOTaxbillAction implements Action {
 			//  
 			response.setContentType("text/html; charset=UTF-8");
 			PrintWriter w = response.getWriter();
-	        w.write("<script>alert('占쏙옙占쏙옙占쏙옙 占쏙옙占쏙옙占쌌니댐옙.');history.go(-1);</script>");
+	        w.write("<script>alert('권한이 부족합니다.');history.go(-1);</script>");
 	        w.flush();
 	        w.close();
 	        ActionForward forward = new ActionForward("CerpHome.Capt", false); 

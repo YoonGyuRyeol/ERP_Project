@@ -30,7 +30,7 @@ public class CaptloginAction implements Action {
 				if(success == true) {
 					user2 = logina.getUser(id1);
 					
-					System.out.println(user2+"?��?��로그?��");
+					System.out.println(user2);
 					Session.setAttribute("loginuser", user2); 
 					System.out.println(user2);
 					

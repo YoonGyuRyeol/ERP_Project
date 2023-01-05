@@ -214,7 +214,6 @@ public class UnitedDAO {
 			stmt = con.createStatement();
 			
 			rs = stmt.executeQuery("select id from sql_table where id='"+id+"' and passwd='"+pwd+"' ");
-			System.out.println("占쎈쐻占쎈윪�뜝�뜴�쐻占쎈짗占쎌굲 占쎈쨬占쎈즵�뜮�꼯�쇊�뜝占� 癲ル슣�돳占쎌맆�뜝�럥爰�");
 			if(rs.next()){//
 					user = rs.getString("id");
 						
@@ -252,7 +251,6 @@ public class UnitedDAO {
 				pstmt.setString(1, b);
 				pstmt.setString(2, uid);
 				rs = pstmt.executeQuery();
-				System.out.println("占쎌넇占쎌뵥");
 				if(rs.next()){//
 				
 				previous = rs.getString("id");
@@ -266,7 +264,7 @@ public class UnitedDAO {
 					pstmt2.setInt(1, point);
 					pstmt2.setString(2, uid);
 					a=pstmt2.executeUpdate();
-					System.out.println("update 占쎈쐻占쎈윪占쎄괜�뜝�럥��占쎈쐻�뜝占�"+a);
+					System.out.println("update "+a);
 				
 				sql = "INSERT INTO log VALUES (?,?)";
 				
@@ -310,7 +308,6 @@ public class UnitedDAO {
 				pstmt.setString(1, b);
 				pstmt.setString(2, uid);
 				rs = pstmt.executeQuery();
-				System.out.println("占쎌넇占쎌뵥");
 				if(rs.next()){//
 				
 				previous = rs.getString("id");
@@ -324,7 +321,7 @@ public class UnitedDAO {
 					pstmt2.setInt(1, point);
 					pstmt2.setString(2, uid);
 					a=pstmt2.executeUpdate();
-					System.out.println("update 占쎈쐻占쎈윪占쎄괜�뜝�럥��占쎈쐻�뜝占�"+a);
+					System.out.println("update "+a);
 				
 				sql = "INSERT INTO log VALUES (?,?)";
 				
@@ -368,7 +365,6 @@ public class UnitedDAO {
 				pstmt.setString(1, b);
 				pstmt.setString(2, uid);
 				rs = pstmt.executeQuery();
-				System.out.println("占쎌넇占쎌뵥");
 				if(rs.next()){//
 				
 				previous = rs.getString("id");
@@ -382,7 +378,7 @@ public class UnitedDAO {
 					pstmt2.setInt(1, point);
 					pstmt2.setString(2, uid);
 					a=pstmt2.executeUpdate();
-					System.out.println("update 占쎈쐻占쎈윪占쎄괜�뜝�럥��占쎈쐻�뜝占�"+a);
+					System.out.println("update "+a);
 				
 				sql = "INSERT INTO log VALUES (?,?)";
 				
@@ -426,7 +422,6 @@ public class UnitedDAO {
 				pstmt.setString(1, b);
 				pstmt.setString(2, uid);
 				rs = pstmt.executeQuery();
-				System.out.println("占쎌넇占쎌뵥");
 				if(rs.next()){//
 				
 				previous = rs.getString("id");
@@ -440,7 +435,7 @@ public class UnitedDAO {
 					pstmt2.setInt(1, point);
 					pstmt2.setString(2, uid);
 					a=pstmt2.executeUpdate();
-					System.out.println("update 占쎈쐻占쎈윪占쎄괜�뜝�럥��占쎈쐻�뜝占�"+a);
+					System.out.println("update "+a);
 				
 				sql = "INSERT INTO log VALUES (?,?)";
 				
@@ -484,7 +479,6 @@ public class UnitedDAO {
 				pstmt.setString(1, b);
 				pstmt.setString(2, uid);
 				rs = pstmt.executeQuery();
-				System.out.println("占쎌넇占쎌뵥");
 				if(rs.next()){//
 				
 				previous = rs.getString("id");
@@ -498,7 +492,7 @@ public class UnitedDAO {
 					pstmt2.setInt(1, point);
 					pstmt2.setString(2, uid);
 					a=pstmt2.executeUpdate();
-					System.out.println("update 占쎈쐻占쎈윪占쎄괜�뜝�럥��占쎈쐻�뜝占�"+a);
+					System.out.println("update "+a);
 				
 				sql = "INSERT INTO log VALUES (?,?)";
 				
@@ -542,7 +536,6 @@ public class UnitedDAO {
 				pstmt.setString(1, b);
 				pstmt.setString(2, uid);
 				rs = pstmt.executeQuery();
-				System.out.println("占쎌넇占쎌뵥");
 				if(rs.next()){//
 				
 				previous = rs.getString("id");
@@ -556,7 +549,7 @@ public class UnitedDAO {
 					pstmt2.setInt(1, point);
 					pstmt2.setString(2, uid);
 					a=pstmt2.executeUpdate();
-					System.out.println("update 占쎈쐻占쎈윪占쎄괜�뜝�럥��占쎈쐻�뜝占�"+a);
+					System.out.println("update "+a);
 				
 				sql = "INSERT INTO rfi_log VALUES (?,?)";
 				
@@ -600,7 +593,6 @@ public class UnitedDAO {
 				pstmt.setString(1, b);
 				pstmt.setString(2, uid);
 				rs = pstmt.executeQuery();
-				System.out.println("占쎌넇占쎌뵥");
 				if(rs.next()){//
 				
 				previous = rs.getString("id");
@@ -614,7 +606,7 @@ public class UnitedDAO {
 					pstmt2.setInt(1, point);
 					pstmt2.setString(2, uid);
 					a=pstmt2.executeUpdate();
-					System.out.println("update 占쎈쐻占쎈윪占쎄괜�뜝�럥��占쎈쐻�뜝占�"+a);
+					System.out.println("update "+a);
 				
 				sql = "INSERT INTO file_log VALUES (?,?)";
 				
@@ -658,7 +650,6 @@ public class UnitedDAO {
 				pstmt.setString(1, b);
 				pstmt.setString(2, uid);
 				rs = pstmt.executeQuery();
-				System.out.println("占쎌넇占쎌뵥");
 				if(rs.next()){//
 				
 				previous = rs.getString("id");
@@ -672,7 +663,7 @@ public class UnitedDAO {
 					pstmt2.setInt(1, point);
 					pstmt2.setString(2, uid);
 					a=pstmt2.executeUpdate();
-					System.out.println("update 占쎈쐻占쎈윪占쎄괜�뜝�럥��占쎈쐻�뜝占�"+a);
+					System.out.println("update "+a);
 				
 				sql = "INSERT INTO xss_log VALUES (?,?)";
 				
@@ -710,7 +701,6 @@ public class UnitedDAO {
 				pstmt = con.prepareStatement("SELECT id,level FROM log WHERE id=?");
 				pstmt.setString(1, uid);
 				rs = pstmt.executeQuery();
-				System.out.println("占쎌넇占쎌뵥");
 				while(rs.next()){//
 				
 				previous = rs.getString("level");
@@ -718,18 +708,18 @@ public class UnitedDAO {
 				
 				if(previous.equals("1")) {
 					a = a+1;
-					System.out.println("level1占쎄깻�뵳�딅선嚥≪뮄�젃占쎌뿳占쎌벉");
+					System.out.println("level1");
 				}
 				if(previous.equals("2")) {
 					a = a+1;
-					System.out.println("level2占쎄깻�뵳�딅선嚥≪뮄�젃占쎌뿳占쎌벉");
+					System.out.println("level2");
 				}
 				if(previous.equals("3")) {
 					a = a+1;
-					System.out.println("level3占쎄깻�뵳�딅선嚥≪뮄�젃占쎌뿳占쎌벉");
+					System.out.println("level3");
 				}if(previous.equals("4")) {
 					a = a+1;
-					System.out.println("level4占쎄깻�뵳�딅선嚥≪뮄�젃占쎌뿳占쎌벉");
+					System.out.println("level4");
 				}
 				}
 				
@@ -754,7 +744,6 @@ public class UnitedDAO {
 			pstmt = con.prepareStatement("SELECT * FROM user WHERE id=?");
 			pstmt.setString(1, id);
 			rs = pstmt.executeQuery();
-			System.out.println("占쎈쐻占쎈윪�뜝�뜴�쐻占쎈짗占쎌굲 占쎈쨬占쎈즵�뜮�꼯�쇊�뜝占� 癲ル슣�돳占쎌맆�뜝�럥爰�");
 			if(rs.next()){//
 					a = rs.getString("id");
 			}
@@ -778,7 +767,6 @@ public class UnitedDAO {
 		int point = 0;
 		String sql = "";
 		boolean success = false;
-		System.out.println("�뜝�뜦紐울옙維믣뜝�럩�젳占쎈쐻占쎈윞�눧硫⑤쐻占쎈윞占쎈렰占쎈쐻占쎈윪占쎌벁");
 		System.out.println(id+pwd+addr+age+point);
 		try {
 			con.setAutoCommit(true);
@@ -816,7 +804,7 @@ public class UnitedDAO {
 			pstmt.setString(1, id);
 			rs = pstmt.executeQuery();
 			
-			if(rs.next()){//�뜝�럥�맶�뜝�럥堉ｅ뜝�럥爰뗥뜝�럩援꿨뜝�럥�맶�뜝�럥吏쀥뜝�럩援� �뜝�럥�맶�뜝�럥吏쀥뜝�럩援꿨뜝�럥�맶占쎈쐻�뜝占�
+			if(rs.next()){
 				name = rs.getString("name");
 						
 			}
@@ -840,7 +828,7 @@ public class UnitedDAO {
 			pstmt.setInt(1, id);
 			rs = pstmt.executeQuery();
 			
-			if(rs.next()){//�뜝�럥�맶�뜝�럥堉ｅ뜝�럥爰뗥뜝�럩援꿨뜝�럥�맶�뜝�럥吏쀥뜝�럩援� �뜝�럥�맶�뜝�럥吏쀥뜝�럩援꿨뜝�럥�맶占쎈쐻�뜝占�
+			if(rs.next()){
 				des = rs.getString("supplement_facts");
 						
 			}
@@ -868,7 +856,7 @@ public class UnitedDAO {
 			pstmt.setInt(1, point);
 			pstmt.setString(2, id);
 			a=pstmt.executeUpdate();
-			System.out.println("update 占쎈쐻占쎈윪占쎄괜�뜝�럥��占쎈쐻�뜝占�"+a);
+			System.out.println("update "+a);
 						
 			pstmt2 = con.prepareStatement("SELECT point FROM users WHERE id=?");
 			pstmt2.setString(1,id);
@@ -2129,23 +2117,12 @@ public class UnitedDAO {
 		System.out.println("없는 품목 리스트");	
 	
 		try {
-			
-				
-					
-						
 							pstmt = con.prepareStatement("select * from item where itemcode not in (select itemcode from bom_stock where bom_code=?) And item_sortation='부품';");
 							System.out.println(pstmt);
 							pstmt.setString(1, bom_code);
 							rs = pstmt.executeQuery();					
 							
-						
-					
-				
-				
 							DecimalFormat df = new DecimalFormat("###,###");
-						
-			
-			
 			if(rs.next()){
 				ItemList = new ArrayList<Item>();
 				
@@ -2158,7 +2135,6 @@ public class UnitedDAO {
 							,rs.getString("item_sortation")
 							
 							));
-					
 					i++;
 					System.out.println(i+" 번쨰 레코드");	
 				} while (rs.next());
@@ -2288,23 +2264,11 @@ public class UnitedDAO {
 		System.out.println("없는 제품 리스트");	
 	
 		try {
-			
-				
-					
-						
 							pstmt = con.prepareStatement("select * from item where itemcode not in (select itemcode from bom_product) And item_sortation='제품';");
 							System.out.println(pstmt);
 			
 							rs = pstmt.executeQuery();					
-							
-						
-					
-				
-				
 							DecimalFormat df = new DecimalFormat("###,###");
-							
-			
-			
 			if(rs.next()){
 				ItemList = new ArrayList<Item>();
 				
@@ -2317,13 +2281,10 @@ public class UnitedDAO {
 							,rs.getString("item_sortation")
 							
 							));
-					
 					i++;
 					System.out.println(i+" 번쨰 레코드");	
 				} while (rs.next());
-				
 			}
-			
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} finally {

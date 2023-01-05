@@ -45,15 +45,14 @@ public class CerpOrderTaxbillAction implements Action {
 				success = logina.checkOrder(updateordercode);
 				request.setAttribute("order", taxbillorder);
 				request.setAttribute("loginuser", user);
-				System.out.println("cerpordertaxbillaction�뿉�꽌 success==true");
+				System.out.println("cerpordertaxbillaction success==true");
 				
 				ActionForward forward = new ActionForward("order_taxbill_popup.jsp", false); //  
 				return forward;
 				}else {
-					System.out.println("�삤瑜�1234");
 					response.setContentType("text/html; charset=UTF-8");
 					PrintWriter w = response.getWriter();
-			        w.write("<script>alert('�삤瑜�.');history.go(-1);</script>");
+			        w.write("<script>alert('권한이 부족합니다.');history.go(-1);</script>");
 			        w.flush();
 			        w.close();
 			        ActionForward forward = new ActionForward("CerpOrder.Capt", false); 
@@ -66,7 +65,7 @@ public class CerpOrderTaxbillAction implements Action {
 			//  
 			response.setContentType("text/html; charset=UTF-8");
 			PrintWriter w = response.getWriter();
-	        w.write("<script>alert('占쏙옙占쏙옙占쏙옙 占쏙옙占쏙옙占쌌니댐옙.');history.go(-1);</script>");
+	        w.write("<script>alert('권한이 부족합니다.');history.go(-1);</script>");
 	        w.flush();
 	        w.close();
 	        ActionForward forward = new ActionForward("CerpHome.Capt", false); 

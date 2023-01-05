@@ -70,7 +70,7 @@ public class CerpPoUpdateAction implements Action {
 			//  
 			response.setContentType("text/html; charset=UTF-8");
 			PrintWriter w = response.getWriter();
-	        w.write("<script>alert('±ÇÇÑÀÌ ºÎÁ·ÇÕ´Ï´Ù.');history.go(-1);</script>");
+	        w.write("<script>alert('ê¶Œí•œì´ ë¶€ì¡±í•©ë‹ˆë‹¤.');history.go(-1);</script>");
 	        w.flush();
 	        w.close();
 	        ActionForward forward = new ActionForward("CerpHome.Capt", false); 
